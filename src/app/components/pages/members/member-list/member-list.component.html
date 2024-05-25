@@ -1,0 +1,28 @@
+<div class="container">
+    <div class="list-table">
+        <div class="title text-center mb-5">
+            <h4>Member List</h4>
+        </div>
+        <table class="table table-bordered">
+        <thead>
+            <tr>
+            <th scope="col">Id</th>
+            <th scope="col">Name</th>
+            <th scope="col">Email</th>
+            <th scope="col">Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let item of memberDataList; let i = index">
+                <td scope="row">{{ i + 1 }}</td>
+                <td>{{ item.name }}</td>
+                <td>{{ item.email }}</td>
+                <td>
+                    <button type="button" class="btn btn-info" (click)="editMember(item)">Edit</button>
+                    <button type="button" class="btn btn-danger ms-2" (click)="deleteMember(i)">Delete</button>
+                </td>
+            </tr>
+        </tbody>
+        </table>
+    </div>
+</div>

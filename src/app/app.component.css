@@ -1,0 +1,14 @@
+.card {
+    width: 60%;
+    margin: auto;
+}
+
+.info-details p {
+    font-size: 16px;
+    color: red;
+    padding-bottom: 10px;
+}
+
+span {
+    color: red;
+}

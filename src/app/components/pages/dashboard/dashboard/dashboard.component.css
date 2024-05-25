@@ -1,0 +1,11 @@
+.dash-main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+.dash-main h2 {
+    color: #285779;
+    font-size: 40px;
+}
